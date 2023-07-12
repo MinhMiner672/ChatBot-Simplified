@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #313131;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 0.5rem;
+	background: #5e5e5e;
+	transition: 0.5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #8d8d8d;
+	transition: 0.5s;
+}
+
+.rubyHeader {
+	font-family: "Ruby-font";
+	text-shadow: 3px 3px #b74bff;
+}
+
+@font-face {
+	font-family: "Ruby-font";
+	src: url("./routes/HomePage/wallpapers/RubyFont.ttf");
+}
