@@ -33,7 +33,7 @@ export default function RubyMessage(props) {
 				<img src={rubyAvt} alt="ruby" className="w-10 rounded-full" />
 				<div
 					id="messageContent"
-					className={`text-sm md:text-lg lg:text-base md:mr-20 px-3 py-2 bg-pink-500 rounded-3xl text-white`}
+					className="text-sm md:text-lg lg:text-base md:mr-20 px-3 py-2 bg-pink-500 rounded-3xl text-white"
 				>
 					{finalMsgContent}
 					<span
