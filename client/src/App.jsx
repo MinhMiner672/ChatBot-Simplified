@@ -11,8 +11,8 @@ function App() {
 		<Routes>
 			<Route path="/" element={<Home />} />
 			<Route path="/home" element={<Home />} />
-			<Route path="/app" element={<RubyChat />} />
-			<Route path="/dashboard" element={<About />} />
+			<Route path="/chat" element={<RubyChat />} />
+			<Route path="/about" element={<About />} />
 		</Routes>
 	)
 }

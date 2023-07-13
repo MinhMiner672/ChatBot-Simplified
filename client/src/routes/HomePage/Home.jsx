@@ -13,13 +13,13 @@ export default function Home() {
 					</p>
 					<div className="gap-3 flex-row flex justify-center items-center text-white font-bold  mt-5">
 						<Link
-							to="/app"
+							to="/chat"
 							id="button"
 							className="p-2 px-4 rounded-lg text-lg hover:cursor-pointer transition-all hover:bg-pink-300 border-2 border-pink-300"
 						>
 							Chat now!
 						</Link>
-						<Link to="/dashboard" className="hover:underline">
+						<Link to="/about" className="hover:underline">
 							About me ➜
 						</Link>
 					</div>
