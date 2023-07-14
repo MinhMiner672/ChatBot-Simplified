@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 import cors from "cors"
 
 import Bard from "bard-ai"
+import path from "path"
 
 dotenv.config()
 // NOTE: Utility functions are defined after being called
