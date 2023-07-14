@@ -27,7 +27,7 @@ app.use(
 )
 
 app.listen(PORT, () => {
-	console.log(`Ruby's alive on port ${PORT}`)
+	console.log(`Ruby's alive on port http://localhost:${PORT}`)
 })
 
 const __filename = fileURLToPath(import.meta.url)
