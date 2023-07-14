@@ -14,6 +14,8 @@ await Ruby.init(process.env.COOKIE)
 const newConversation = new Ruby.Chat()
 
 const app = express()
+
+app.use(express.static("public"))
 app.use(express.json())
 app.use(
 	cors({
@@ -23,6 +25,10 @@ app.use(
 
 app.listen(PORT, () => {
 	console.log(`Ruby's alive on port ${PORT}`)
+})
+
+app.get("/", (req, res) => {
+	res.sendFile("index.html", { root: path.join(__dirname, "public") })
 })
 
 // The user message data will be sent here
@@ -62,3 +68,5 @@ function shortenMessage(originalMessage) {
 	const finalResult = originalMessage.match(regExTemplate)
 	return finalResult
 }
+
+export default app
