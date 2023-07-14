@@ -2,11 +2,11 @@
 
 A simple but cute chatbot
 
-## Link to my website
+## 🔗 Link to my website
 
 You can directly visit my website on https://ruby-chan.vercel.app/
 
-## How to run my website locally
+## 💻 How to run my website locally
 
 ### 1. Requirements
 
