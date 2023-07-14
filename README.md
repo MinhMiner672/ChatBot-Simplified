@@ -14,7 +14,7 @@ You can directly visit my website on https://ruby-chan.vercel.app/
 
     > <u>Notes</u>: Recommended version: **v18.16.1**. Type `node-v` in the terminal to check the current version
 
--   [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository or download my zip files from [Google Drive]()
+-   [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository or download my zip files from [Google Drive](https://drive.google.com/drive/folders/1TrPktqUMe6a5bjYBcYkUrzRFWAflvtqY?usp=sharing)
 
 ### 2. Setups (important!)
 
@@ -62,3 +62,5 @@ $ npm run dev
 [nodemon] starting `node server.js`
 Ruby's alive on port http://localhost:8080
 ```
+
+### 3. Enjoy and have a wonderful conversation 🥳
