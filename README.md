@@ -1,6 +1,6 @@
 # 🌟 Ruby-chan 🌟
 
-A simple but cute chatbot based on Bard API
+A simple but cute chatbot based on [Bard API](https://github.com/EvanZhouDev/bard-ai)
 
 ## 🔗 Link to my website
 
