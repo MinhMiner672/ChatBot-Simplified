@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
 })
 
 // The user message data will be sent here
-app.post("/ruby", (req, res) => {
+app.post("/", (req, res) => {
 	const userMessage = req.body.content
 	const responseResult = {}
 

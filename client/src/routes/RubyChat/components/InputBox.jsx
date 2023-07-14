@@ -37,7 +37,7 @@ export default function TextBox() {
 		if (!messageInput) return
 
 		const myData = { author: "Aqua", content: messageInput }
-		const backendLocalURL = "http://localhost:8080/ruby"
+		const backendLocalURL = "https://ruby-chan-backend.vercel.app"
 
 		// These statements below will run in order as they are in an async function
 		// which makes them look like sync although they're actually async
