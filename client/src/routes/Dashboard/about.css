@@ -1,6 +1,7 @@
 /* Main page */
 .ruby-sweat-bg {
-	@apply h-screen w-screen bg-rubySweating bg-no-repeat bg-cover bg-center;
+	background-image: url(./images/ruby_sweat.png);
+	@apply h-screen w-screen bg-no-repeat bg-cover bg-center;
 }
 
 .color-bg {

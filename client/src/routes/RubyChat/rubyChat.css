@@ -1,3 +1,4 @@
 .background {
-	@apply py-7 px-5 w-screen h-screen bg-aiSky bg-no-repeat bg-cover;
+	background-image: url(./components/images/ai_sky.jpg);
+	@apply py-7 px-5 w-screen h-screen bg-no-repeat bg-cover;
 }
