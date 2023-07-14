@@ -5,6 +5,8 @@ import AquaMessage from "./messages/AquaMessage"
 import RubyMessage from "./messages/RubyMessage"
 import ThreeDots from "./messages/ThreeDots"
 
+import "./styles/inputBox.css"
+
 export default function TextBox() {
 	// Message global data fetching
 	const { setAllMessages } = useContext(UserContext)
@@ -82,7 +84,9 @@ export default function TextBox() {
 				setRubyTyingState(false)
 			}, 300)
 		} catch (err) {
-			console.error(err)
+			alert(
+				"Something went wrong, please contact MinhMiner#2793 on Discord"
+			)
 		}
 	}
 
@@ -131,37 +135,33 @@ export default function TextBox() {
 	}
 
 	return (
-		<div>
-			<form>
-				<div className="flex items-center gap-2 py-2 px-3 rounded-lg">
-					<button
-						id="clear"
-						className="border-2 border-cyan-600 hover:bg-cyan-600 hover:opacity-100 text-white opacity-70 font-bold py-2 px-4 rounded-full"
-						onClick={clearChat}
-					>
-						Clear
-					</button>
+		<>
+			<main className="input-box-wrapper">
+				{/* Clear button */}
+				<button className="clear-btn" onClick={clearChat}>
+					Clear
+				</button>
 
-					{/* Typing area */}
-					<input
-						id="chat"
-						rows="1"
-						className="rounded-full p-3 block mx-1 w-full text-lg text-gray-200 bg-gray-800 dark:placeholder-gray-400"
-						placeholder={
-							rubyIsTyping
-								? "Ruby is typing..."
-								: "Please talk to me :3"
-						}
-						disabled={rubyIsTyping ? true : false}
-						value={userCurrentTypingMsg}
-						onKeyDown={handleKeyPressed}
-						onChange={handleTyping}
-						autoComplete="off"
-						autoFocus
-					></input>
-				</div>
-			</form>
+				{/* Typing area */}
+				<input
+					className="input-box"
+					rows="1"
+					placeholder={
+						rubyIsTyping
+							? "Ruby is typing..."
+							: "Please talk to me :3"
+					}
+					disabled={rubyIsTyping ? true : false}
+					value={userCurrentTypingMsg}
+					onKeyDown={handleKeyPressed}
+					onChange={handleTyping}
+					autoComplete="off"
+					autoFocus
+				></input>
+			</main>
+
+			{/* Get the input box pre-defined style from flowbite */}
 			<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-		</div>
+		</>
 	)
 }

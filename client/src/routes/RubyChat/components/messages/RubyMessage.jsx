@@ -2,6 +2,8 @@ import rubyAvt from "../images/rubyGasp.jpg"
 import PropTypes from "prop-types"
 import { useEffect, useState } from "react"
 
+import "./styles/rubyMsg.css"
+
 export default function RubyMessage(props) {
 	const { shortContent, fullContent, finalContent, state } = props
 	const [finalMsgContent, setFinalMsgContent] = useState(finalContent)
@@ -25,36 +27,31 @@ export default function RubyMessage(props) {
 	}
 
 	return (
-		<>
+		<main id="ruby" className="ruby-msg-wrapper">
+			<img src={rubyAvt} alt="ruby" className="ruby-msg-avt" />
 			<div
-				id="ruby"
-				className="flex flex-row justify-start pr-5 items-end gap-2 "
+				id="messageContent"
+				className="ruby-msg-content md:text-lg lg:text-base md:mr-20 text-sm"
 			>
-				<img src={rubyAvt} alt="ruby" className="w-10 rounded-full" />
-				<div
-					id="messageContent"
-					className="text-sm md:text-lg lg:text-base md:mr-20 px-3 py-2 bg-pink-500 rounded-3xl text-white"
+				{finalMsgContent}
+				<span
+					id="shorten-option"
+					className={
+						state === "shortened" ? "inline-block" : "hidden" // Whether or not to show the "expand", "collapse" button
+					}
 				>
-					{finalMsgContent}
-					<span
-						id="shorten-option"
-						className={
-							state === "shortened" ? "inline-block" : "hidden" // Whether or not to show the "expand", "collapse" button
-						}
+					(
+					<a
+						className="text-blue-900"
+						href="#"
+						onClick={handleModifyMsg}
 					>
-						(
-						<a
-							className={"text-blue-900"}
-							href="#"
-							onClick={handleModifyMsg}
-						>
-							{shortenerName === "expand" ? "expand" : "collapse"}
-						</a>
-						)
-					</span>
-				</div>
+						{shortenerName === "expand" ? "expand" : "collapse"}
+					</a>
+					)
+				</span>
 			</div>
-		</>
+		</main>
 	)
 }
 

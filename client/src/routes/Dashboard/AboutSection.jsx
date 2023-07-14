@@ -13,10 +13,7 @@ export default function AboutSection(props) {
 
 	return (
 		<div className="flex flex-col">
-			<header
-				onClick={changeToggle}
-				className="bg-gray-500 bg-opacity-30 p-3 rounded-lg font-bold font-mono text-2xl hover:bg-opacity-60 hover:cursor-pointer select-none"
-			>
+			<header onClick={changeToggle} className="header">
 				{header}
 			</header>
 			<ul

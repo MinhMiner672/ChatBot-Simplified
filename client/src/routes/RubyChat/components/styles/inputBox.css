@@ -1,0 +1,11 @@
+.input-box-wrapper {
+	@apply flex items-center gap-2 py-2 px-3 rounded-lg;
+}
+
+.clear-btn {
+	@apply border-2 border-cyan-600 hover:bg-cyan-600 hover:opacity-100 text-white opacity-70 font-bold py-2 px-4 rounded-full;
+}
+
+.input-box {
+	@apply rounded-full p-3 block mx-1 w-full text-lg text-gray-200 bg-gray-800 dark:placeholder-gray-400;
+}

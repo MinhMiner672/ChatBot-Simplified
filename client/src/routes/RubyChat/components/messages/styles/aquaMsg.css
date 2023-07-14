@@ -1,0 +1,11 @@
+.msg-wrapper {
+	@apply flex flex-row justify-end items-end gap-2;
+}
+
+.msg-content {
+	@apply text-sm md:text-lg lg:text-base md:ml-20 px-3 py-2 bg-blue-500 rounded-3xl text-white;
+}
+
+.aqua-avt {
+	@apply w-10 rounded-full;
+}

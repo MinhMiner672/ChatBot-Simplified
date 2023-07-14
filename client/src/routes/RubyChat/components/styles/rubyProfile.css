@@ -1,0 +1,28 @@
+/* Ruby Profile */
+.ruby-profile-wrapper {
+	@apply w-full h-16 flex flex-row justify-center items-center gap-x-2;
+}
+
+.ruby-profile-avt {
+	@apply rounded-lg w-14 md:w-16;
+}
+
+.ruby-name-title {
+	@apply text-lg md:text-xl text-stone-100 font-bold;
+}
+
+/* Home Icon */
+.home-icon-wrapper {
+	@apply fixed top-0 left-0 w-full pt-3 pl-2;
+}
+
+.home-icon {
+	@apply h-6 transition-all duration-200;
+	filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(204deg)
+		brightness(98%) contrast(79%);
+}
+
+.home-icon:hover {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(267deg)
+		brightness(105%) contrast(106%);
+}
