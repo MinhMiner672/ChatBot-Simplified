@@ -3,7 +3,9 @@ import dotenv from "dotenv"
 import cors from "cors"
 
 import Bard from "bard-ai"
+
 import path from "path"
+import { fileURLToPath } from "url"
 
 dotenv.config()
 // NOTE: Utility functions are defined after being called
@@ -28,6 +30,8 @@ app.listen(PORT, () => {
 	console.log(`Ruby's alive on port ${PORT}`)
 })
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 app.get("/", (req, res) => {
 	res.sendFile("index.html", { root: path.join(__dirname, "public") })
 })
