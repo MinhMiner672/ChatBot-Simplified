@@ -24,13 +24,3 @@
 	background: #8d8d8d;
 	transition: 0.5s;
 }
-
-.rubyHeader {
-	font-family: "Ruby-font";
-	text-shadow: 3px 3px #b74bff;
-}
-
-@font-face {
-	font-family: "Ruby-font";
-	src: url("./routes/HomePage/wallpapers/RubyFont.ttf");
-}
