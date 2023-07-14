@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 import "./home.css"
 
 export default function Home() {
+	useEffect(() => {
+		document.title = "Ruby-chan | Home"
+	}, [])
+
 	return (
 		<div className="ruby-sweat-bg">
 			<div className="color-bg">

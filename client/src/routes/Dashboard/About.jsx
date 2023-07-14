@@ -1,8 +1,13 @@
 import AboutSection from "./AboutSection"
 import homeIcon from "./images/home.png"
 import "./about.css"
+import { useEffect } from "react"
 
 export default function About() {
+	useEffect(() => {
+		document.title = "Ruby-chan | About"
+	}, [])
+
 	const projectContent =
 		"• Project name: Ruby-chan||• Technologies used: React, Tailwind CSS, NodeJS, Express||• Description: Đây là một trang web đơn giản được tích hợp 1 con chatbot tên Ruby dựa trên Bard API"
 

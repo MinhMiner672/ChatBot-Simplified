@@ -1,4 +1,4 @@
-import { createContext, useState } from "react"
+import { createContext, useState, useEffect } from "react"
 
 import RubyProfile from "./components/RubyProfile"
 import ChatArea from "./components/ChatArea"
@@ -9,6 +9,10 @@ import "./rubyChat.css"
 export const UserContext = createContext(null)
 
 export default function RubyChat() {
+	useEffect(() => {
+		document.title = "Ruby-chan | Chat"
+	}, [])
+
 	const [allMessages, setAllMessages] = useState([])
 
 	return (
