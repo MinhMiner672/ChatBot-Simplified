@@ -39,17 +39,20 @@ app.get("/", (req, res) => {
 // The user message data will be sent here
 app.post("/", (req, res) => {
 	const userMessage = req.body.content
-	const responseResult = {}
+	const responseResult = { shortContent: "", fullContent: "" }
 
-	responseResult.shortContent = ""
 	try {
 		replyMsg(userMessage).then((replyMessage) => {
+			// Replace Bard with Ruby
+			const newReplyMsg = replyMessage.replace("Bard", "Ruby")
+
 			// If the reply is too long
 			if (replyMessage.split(" ").length >= 40) {
-				const shortenedMessage = shortenMessage(replyMessage)
+				const shortenedMessage = shortenMessage(newReplyMsg)
 				responseResult.shortContent = shortenedMessage
 			}
-			responseResult.fullContent = replyMessage
+			responseResult.fullContent = newReplyMsg
+			console.log(shortenMessage)
 
 			// Status 200 means OK
 			res.status(200).send(JSON.stringify(responseResult))
