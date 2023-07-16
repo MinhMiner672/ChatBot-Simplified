@@ -1,13 +1,12 @@
-import express from "express"
-import dotenv from "dotenv"
-import cors from "cors"
-
 import Bard from "bard-ai"
 
-import path from "path"
 import { fileURLToPath } from "url"
+import { config } from "dotenv"
+import express from "express"
+import cors from "cors"
+import path from "path"
 
-dotenv.config()
+config()
 // NOTE: Utility functions are defined after being called
 
 const Ruby = Bard
@@ -58,7 +57,7 @@ app.post("/", (req, res) => {
 			res.status(200).send(JSON.stringify(responseResult))
 		})
 	} catch (err) {
-		console.log(err)
+		console.error(err)
 	}
 })
 
