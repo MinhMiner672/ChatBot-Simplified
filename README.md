@@ -54,6 +54,8 @@ $ npm run dev
 -   Expected output:
 
 ```
+$ npm run dev
+
 > server@1.0.0 dev
 > nodemon server.js
 
