@@ -12,7 +12,7 @@ You can directly visit my website on https://ruby-chan.vercel.app/
 
 -   Make sure you have both [Visual Studio Code](https://code.visualstudio.com/) and [NodeJS](https://nodejs.org/en/download) installed
 
-    > <u>Notes</u>: Recommended version: **v18.16.1**. Type `node-v` in the terminal to check the current version
+    > <u>Notes</u>: Node **v18.16.1** is recommended. Type `node-v` in the terminal to check the current version
 
 -   [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository or download my zip files from [Google Drive](https://drive.google.com/drive/folders/1TrPktqUMe6a5bjYBcYkUrzRFWAflvtqY?usp=sharing)
 
@@ -24,6 +24,7 @@ You can directly visit my website on https://ruby-chan.vercel.app/
 
 -   Open the terminal and direct to the `client` folder
 -   `npm init -y` to initialize a node project
+-   Go to `package.json` and add `"types": "module"` to enable ES6 syntax
 -   `npm i` to install all the dependencies
 -   `cd..` and then `npm create vite@latest your-project-name -- --template react`
 -   `cd your-folder-name` and `npx tailwindcss init -p`
@@ -49,6 +50,7 @@ $ npm run dev
 
 -   Open another terminal and direct to the `server` folder
 -   `npm init -y` -> `npm i` -> `npm run dev`
+-   Go to `package.json` and add `"types": "module"` to enable ES6 syntax
 -   Expected output:
 
 ```
