@@ -19,9 +19,6 @@ export default function Home() {
 						<Link to="/chat" id="button" className="chat-now-btn">
 							Chat now!
 						</Link>
-						<Link to="/about" className="hover:underline">
-							About me ➜
-						</Link>
 					</section>
 				</main>
 			</div>
