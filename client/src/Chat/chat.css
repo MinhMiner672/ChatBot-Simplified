@@ -1,0 +1,4 @@
+.background {
+	@apply py-7 px-1 w-screen h-screen;
+	background-color: #16273a;
+}

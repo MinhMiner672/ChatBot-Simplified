@@ -3,7 +3,8 @@
 }
 
 .msg-content {
-	@apply text-sm md:text-lg lg:text-base md:ml-20 px-3 py-2 bg-blue-500 rounded-3xl text-white;
+	@apply text-sm md:text-lg lg:text-base md:ml-20 px-3 py-2 rounded-xl text-white;
+	background-color: #3e9f85;
 }
 
 .aqua-avt {

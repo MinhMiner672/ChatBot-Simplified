@@ -1,7 +1,0 @@
-.three-dots-wrapper {
-	@apply p-1 flex justify-center items-center gap-1 animate-pulse;
-}
-
-.dot {
-	@apply w-2 h-2 bg-gray-300 rounded-full;
-}

@@ -1,18 +1,18 @@
-import aquaAvt from "../images/aquaMsgAvt.png"
+import KazuhaAvt from "../images/Kazuha.jpg"
 import PropTypes from "prop-types"
-import "./styles/aquaMsg.css"
+import "./styles/userMsg.css"
 
-export default function AquaMessage(props) {
+export default function UserMessage(props) {
 	const { content } = props
 
 	return (
 		<main id="aqua" className="msg-wrapper">
 			<div className="msg-content">{content}</div>
-			<img src={aquaAvt} alt="aqua" className="aqua-avt" />
+			<img src={KazuhaAvt} alt="aqua" className="aqua-avt" />
 		</main>
 	)
 }
 
-AquaMessage.propTypes = {
+UserMessage.propTypes = {
 	content: PropTypes.string,
 }

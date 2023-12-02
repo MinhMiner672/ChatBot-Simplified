@@ -1,0 +1,5 @@
+.chat-area-box {
+	/* This box has gradient bg */
+	@apply h-3/4 px-3 py-5 flex flex-col-reverse gap-5 rounded-2xl drop-shadow-2xl overflow-y-scroll text-lg text-white;
+	background-color: #23364a;
+}
