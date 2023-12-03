@@ -1,12 +1,12 @@
-.ruby-msg-wrapper {
-	@apply flex flex-row justify-start pr-5 items-end gap-2;
+.bot-msg-wrapper {
+  @apply flex flex-row justify-start pr-5 items-end gap-2;
 }
 
-.ruby-msg-avt {
-	@apply w-10 rounded-full;
+.bot-msg-avt {
+  @apply w-10 rounded-full;
 }
 
-.ruby-msg-content {
-	@apply px-3 py-2 rounded-xl text-white;
-	background-color: #3b618a;
+.bot-msg-content {
+  @apply px-3 py-2 rounded-xl text-white;
+  background-color: #3b618a;
 }

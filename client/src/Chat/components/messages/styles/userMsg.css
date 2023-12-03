@@ -1,12 +1,12 @@
 .msg-wrapper {
-	@apply flex flex-row justify-end items-end gap-2;
+  @apply flex flex-row justify-end items-end gap-2;
 }
 
 .msg-content {
-	@apply text-sm md:text-lg lg:text-base md:ml-20 px-3 py-2 rounded-xl text-white;
-	background-color: #3e9f85;
+  @apply text-sm md:text-lg lg:text-base md:ml-20 px-3 py-2 rounded-xl text-white;
+  background-color: #3e9f85;
 }
 
-.aqua-avt {
-	@apply w-10 rounded-full;
+.kazuha-avt {
+  @apply w-10 rounded-full;
 }
